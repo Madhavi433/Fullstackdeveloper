@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            transition: all 2s; /*use for time*/
+            /*transform use for particular name*/
+        }
+
+        .b1{background-color: blue;}
+        .b2{background-color: brown;}
+        .b3{background-color: purple;}
+
+        .b1:hover{
+            transform: rotate(120deg);
+            background-color: palevioletred;
+            }
+        .b2:hover{transform: rotateX(35deg);}
+        .b3:hover{transform: rotateY(40deg);}
+    </style>
+</head>
+<body>
+    <h1>rotate(deg)</h1> 
+   <div class="b1"></div>
+   <div class="b2"></div>
+   <div class="b3"></div> 
+</body>
+</html>

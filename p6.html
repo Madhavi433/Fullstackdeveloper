@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            margin: 10px;
+            transition:all 2s;
+        }
+
+        .b1:hover {           /*a,b,c,d,tx,ty*/
+            transform: matrix(2,0,0,2,120,300);
+        }
+
+        .b2{
+            transform: matrix(1,2,-1,1,80,80);
+            background-color: blue;
+        }
+        .b3{
+            transform:matrix(2,1,1,2,40,50);
+            background-color: olivedrab;
+        }
+    </style>
+</head>
+<body>
+    <h3>matrix(scaleX,skewY,skewX,scaleY,translateX,translateY)</h3>
+    <div class="b1"></div>
+    <div class="b2"></div>
+    <div class="b3"></div>
+</body>
+</html>
