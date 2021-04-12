@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            z-index:-1;
+        }
+
+        map{
+            cursor:pointer;
+            border:5px solid  crimson;
+            z-index:-1;
+        }
+
+        map::before {
+            content:'';
+            position:absolute;
+            top:390px;
+            left:110px;
+            right:0;
+            bottom:0;
+            background: rgba(195,255,0,0.712);
+            z-index: 1;
+            width:30px;
+            height:30px;
+            border-radius:50%;
+        }
+   </style>
+</head>
+<body>
+    <h3>map</h3>
+    <img src="https://media.istockphoto.com/photos/indian-farmer-at-onion-field-picture-id1092520698?k=6&m=1092520698&s=612x612&w=0&h=aOMSDBVxw3Hg3CckJvZIs6q82WOaxR82zW3y1fPqmBc=" alt="" height="500" usemap="#farmer">
+
+    <map name="farmer">
+        
+        <area shape="rect" coords="80,35,150,90" href="p1.html" alt="audio" />
+        <area shape="circle" coords="200,50,150,60" href="p2.html" alt="">
+    </map>
+    
+</body>
+</html>

@@ -5,30 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div {
-            width: 100px;
-            height: 100px;
-            margin: 10px;
-            transition: all 2s; /*use for time*/
-            /*transform use for particular name*/
+        .sub {
+            width:500px;
+            padding:30px;
+            text-align:center;
+            background-color:#aaa;
+            box-shadow: 3px 5px 32px rgba(0,0,0,0.5);
         }
+        
 
-        .b1{background-color: blue;}
-        .b2{background-color: brown;}
-        .b3{background-color: purple;}
-
-        .b1:hover{
-            transform: skew(120deg);
-            background-color: palevioletred;
-            }
-        .b2:hover{transform: skewX(35deg);} /*skew use for bend the fig*/
-        .b3:hover{transform: skewY(35deg);}
     </style>
 </head>
 <body>
-    <h1>skew(deg)</h1> 
-    <div class="b1"></div>
-    <div class="b2"></div>
-    <div class="b3"></div>   
+    <h3>Dialog</h3>
+    <button id="show">show dialog</button>
+
+    <dialog class="sub" id="myDialog">
+        <button id="close">&times;</button>
+        <h3>My Dialog heading</h3>
+        <from action="">
+            <label for="">Subscribe Here</label>
+            <input type="email" name="subscribe" id="subscribe" placeholder="Enter your email id to subscribe">
+            <br><br>
+            <input type="submit" value="Subscribe">
+        </from>
+    </dialog>
+
+    <script>
+        var myDialog=document.getElementById("myDialog");
+
+        document.getElementById("show").onclick=function(){
+            myDialog.show();
+        }
+
+        document.getElementById("close").onclick=function(){
+            myDialog.close();
+        }
+    </script>
+
+    
 </body>
 </html>
